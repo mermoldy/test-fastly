@@ -20,6 +20,12 @@ resource "fastly_service_v1" "test_service" {
   }
 
   force_destroy = true
+  
+  vcl {
+    name    = "my_custom_main_vcl"
+    content = "${file("${path.module}/test.vcl")}"
+    main    = true
+  }
 }
 
 output "active" {
