@@ -17,7 +17,7 @@ backend F_My_Test_Backend {
     .host = "httpbin.org";
     .max_connections = 200;
     .port = "80";
-    .share_key = "5Qxg4wbNk7DO3vPWIHkW2l";
+    .share_key = "1oE8a6jEF2ZWiuhVSHd9hn";
 
 
     .probe = {
